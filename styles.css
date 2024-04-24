@@ -1,10 +1,24 @@
 body {
-    background-color: blueviolet;
+    background-color: rgb(45, 32, 57);
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.start-button {
+    margin-top: 20px; /* Adjust as needed */
 }
 
 button {
     cursor: pointer;
+    /* Add any additional styling you want for the button */
 }
+
+
 .box {
     background: rgb(224, 224, 211);
     border: 1px solid black;
@@ -38,6 +52,9 @@ button {
     background-color: yellow;
 }
 
+.next-btn1 {
+    display: block;
+}
 .next-btn {
     background: black;
     color: #fff;
@@ -45,6 +62,9 @@ button {
     width: 80px;
     border: 1px solid grey;
     padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    display: none;
 
 
 
@@ -54,5 +74,6 @@ button {
     font-size: 18px;
     font-weight: 600;
     text-align: left;
-    border-radius: ;
+   
+
 }
