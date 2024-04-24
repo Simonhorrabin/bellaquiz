@@ -1,0 +1,58 @@
+body {
+    background-color: blueviolet;
+}
+
+button {
+    cursor: pointer;
+}
+.box {
+    background: rgb(224, 224, 211);
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 10%;
+
+}
+.box h1 {
+    font-weight: 25px;
+    color: black;
+    
+}
+
+.btn {
+    border: 1px solid purple;
+    border-radius: 15%;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: all .3s;
+    
+}
+
+.btn:hover {
+    color: purple;
+    background-color: yellow;
+}
+
+.next-btn {
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    width: 80px;
+    border: 1px solid grey;
+    padding: 10px;
+
+
+
+}
+
+.box p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    border-radius: ;
+}
