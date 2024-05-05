@@ -47,6 +47,10 @@ button {
     
 }
 
+#question {
+    color:black;
+}
+
 .btn:hover {
     color: purple;
     background-color: yellow;
