@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(45, 32, 57);
+    background-color: rgb(32, 54, 57);
     color: beige;
     display: flex;
     flex-direction: column;
@@ -36,8 +36,8 @@ button {
 }
 
 .btn {
-    border: 1px solid purple;
-    border-radius: 15%;
+    border: 1px solid rgb(66, 101, 130);
+    border-radius: 6px;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -52,32 +52,32 @@ button {
 }
 
 .btn:hover {
-    color: purple;
-    background-color: yellow;
+    color: #fff;
+    background-color: rgb(50, 86, 93);
 }
 
 .next-btn1 {
     display: block;
 }
-.next-btn {
+#next-btn {
     background: black;
     color: #fff;
     font-weight: 500;
-    width: 80px;
+    width: 150px;
     border: 1px solid grey;
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 4px;
     display: none;
-
-
-
 }
-
+#next-btn:hover{
+    background: rgb(rgb(0, 1, 1), green, blue);
+}
 .box p {
     font-size: 18px;
     font-weight: 600;
     text-align: left;
-   
-
+}
+.correct{
+    background: #9aeabc;
 }
