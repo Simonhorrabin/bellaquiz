@@ -19,6 +19,14 @@ button {
 }
 
 
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
 .box {
     background: rgb(224, 224, 211);
     border: 1px solid black;
@@ -56,7 +64,7 @@ button {
     background-color: rgb(50, 86, 93);
 }
 
-.next-btn1 {
+.next-btn {
     display: block;
 }
 #next-btn {
