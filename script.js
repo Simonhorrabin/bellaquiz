@@ -21,7 +21,7 @@ const questions = [
         question: "What kind of dog is Bella?",
         answers: [
             { text: "Lab-mix", correct: false },
-            { text: "Chihuahua", correct: true },
+            { text: "Pit-mix", correct: true },
             { text: "Boxer-mix", correct: false },
             { text: "Husky", correct: false },
         ]
@@ -82,9 +82,40 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct === "true"
     if(isCorrect){
         selectedBtn.classList.add('correct');
+        score++;
     }else{
         selectedBtn.classList.add("incorrect");
     }
-
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
 }
+
+function showScore(){
+    resetState();
+    questionElement.innerHTML = `You got a ${score} out of ${questions.length}!` ;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    }else{
+        showScore();
+    }
+}
+
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
+})
 startQuiz()
